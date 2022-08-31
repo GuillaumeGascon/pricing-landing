@@ -60,14 +60,97 @@ a {
   height: 100vh;
   overflow: hidden;
   background: radial-gradient(circle at center, #00144A 0%, #011019 30%, #011019 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.container .title-container {
+.container .title-section {
   width: 100%;
-  padding: 64px 32px 32px 32px;
+  padding: 128px 16px 64px 16px;
+  max-width: 750px;
 }
-.container .title-container .text-small {
+.container .title-section .text-small {
   color: #00D0EE;
   margin-bottom: 16px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+.container .title-section h1 {
+  color: #FCFBF9;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38px;
+}
+.container .title-section .text-normal {
+  color: #9BA6B4;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 36px;
+}
+.container .card-section {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+}
+.container .card-section .card {
+  width: 100%;
+  border-radius: 24px;
+  max-width: 600px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.container .card-section .card.card-blur {
+  backdrop-filter: blur(100px) saturate(125%);
+  background-color: rgba(255, 255, 255, 0.02);
+}
+.container .card-section .card h3 {
+  color: #FCFBF9;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.container .card-section .card .text-normal {
+  color: #9BA6B4;
+  width: 100%;
+  font-size: 20px;
+  line-height: 36px;
+}
+.container .card-section .card .price-container {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+}
+.container .card-section .card .price-container .dollar-sign-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-right: 8px;
+}
+.container .card-section .card .price-container .dollar-sign-container span {
+  color: #FCFBF9;
+  font-size: 32px;
+  line-height: 38px;
+}
+.container .card-section .card .price-container .amount-container {
+  margin-right: 16px;
+}
+.container .card-section .card .price-container .amount-container h2 {
+  color: #FCFBF9;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 78px;
 }
 
 /*# sourceMappingURL=styles.css.map */
